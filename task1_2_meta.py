@@ -20,7 +20,4 @@ if __name__ == '__main__':
     print("Class attrs: {}".format(Account.__dict__))
 
     invalid_number = "123"
-    try:
-        acc_wrong = Account(invalid_number)
-    except AssertionError:
-        print(f"The number {invalid_number} length is invalid")
+    acc_wrong = Account(invalid_number)
